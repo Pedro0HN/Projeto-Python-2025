@@ -42,16 +42,16 @@ def adicionar_reserva():
         print("Ano inválido ou não registrado no sistema")
         return
     mes = int(input("Digte o mês da reserva: "))
-    if mes < 0 or mes > 12:
+    if mes < 1 or mes > 12:
         print('Número do mês inválido')
         return
     if mes == 2:
         dia = int(input("Digite o dia da reserva (1-28): "))
-        if dia < 0 or dia > 28:
+        if dia < 1 or dia > 28:
             print('Dia inválido')
             return
     dia = int(input("Digite o dia da reserva (1-30): "))
-    if dia < 0 or dia > 30:
+    if dia < 1 or dia > 30:
         print('Dia inválido')
         return
 
@@ -86,6 +86,7 @@ def cancelar_reserva():
         [0] - Salâo de Festas
         [1] - Churrascaria
         [2] - Salão Gourmet 
+        [3] - Piscina
         ''')
     espaco = int(input("Digite o número do espaço a ser cancelado: "))
     if espaco < 0 or espaco >= len(espacos_lista):
@@ -98,15 +99,15 @@ def cancelar_reserva():
         print("Ano inválido ou não registrado no sistema")
         return
     mes = int(input(" Digite o mes da reserva a ser cancelado: "))
-    if mes < 0 or mes > 12:
+    if mes < 1 or mes > 12:
         print('Número do mês inválido')
         return
     dia = int(input("Digite o dia da reserva a ser cancelado (1-30): "))
     if mes==2:
-        if dia < 0 or dia>28:
+        if dia < 1 or dia>28:
             print('Dia inválido')
             return
-    elif dia < 0 or dia > 30:
+    elif dia < 1 or dia > 30:
         print('Dia inválido')
         return
 
