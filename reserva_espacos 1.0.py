@@ -41,7 +41,7 @@ def adicionar_reserva():
     if ano < 2025 or ano>2030:
         print("Ano inválido ou não registrado no sistema")
         return
-    mes = int(input("Digte o mês da reserva: "))
+    mes = int(input("Digite o mês da reserva: "))
     if mes < 1 or mes > 12:
         print('Número do mês inválido')
         return
@@ -50,10 +50,11 @@ def adicionar_reserva():
         if dia < 1 or dia > 28:
             print('Dia inválido')
             return
-    dia = int(input("Digite o dia da reserva (1-30): "))
-    if dia < 1 or dia > 30:
-        print('Dia inválido')
-        return
+    else:
+        dia = int(input("Digite o dia da reserva (1-30): "))
+        if dia < 1 or dia > 30:
+         print('Dia inválido')
+         return
 
     data = f"{dia:02d}/{mes:02d}/{ano}"
 
