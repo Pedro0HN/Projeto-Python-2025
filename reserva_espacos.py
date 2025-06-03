@@ -19,11 +19,11 @@ def menu():
         print("4. Sair")
         opcao = input("Escolha uma opção: ")
         if opcao == '1':
-            adicionar_reserva(reservas, espacos_lista)
+            adicionar_reserva()
         elif opcao == '2':
-            listar_reservas(reservas)
+            listar_reservas()
         elif opcao == '3':
-            cancelar_reserva(reservas, espacos_lista)
+            cancelar_reserva()
         elif opcao == '4':
             print("Saindo do sistema...")
             break
