@@ -37,7 +37,6 @@ def menu():
         if opcao == '1':
             adicionar_reserva(reservas, espacos_lista)
             salvar_dados('dados/reservas.txt', reservas)
-            salvar_dados('dados/areas.txt', espacos_lista)
 
         elif opcao == '2':
             listar_reservas(reservas)
@@ -65,7 +64,6 @@ def menu():
     '--' '--'' '--'                                         
 """)
             salvar_dados('dados/reservas.txt', reservas)
-            salvar_dados('dados/areas.txt', espacos_lista)
             break
 
         else:
